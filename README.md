@@ -1,7 +1,6 @@
 # Log Analyzer 
 
 ![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
 Простой, но мощный инструмент для анализа логов различных систем на Python. Поддерживает парсинг и анализ логов Apache, Nginx, системных логов (syslog) и других форматов.
