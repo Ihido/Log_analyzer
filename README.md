@@ -101,16 +101,10 @@ print(f"Найдено ошибок: {report['errors']}")
 ```
 ## Поддерживаемые форматы
 
-<details> <summary><b>📋 Apache Access Log</b></summary>
-```bash
+<details> <summary><b>Apache Access Log</b></summary>
 192.168.1.1 - - [10/Oct/2023:12:34:56 +0300] "GET /index.html HTTP/1.1" 200 1234
-```
-</details><details> <summary><b>📋 Nginx Access Log</b></summary>
-```bash
+</details><details> <summary><b>Nginx Access Log</b></summary>
 192.168.1.100 - - [10/Oct/2023:12:40:00 +0300] "GET /style.css HTTP/1.1" 200 1234
-```
-</details><details> <summary><b>📋 Syslog</b></summary>
-```bash
+</details><details> <summary><b>Syslog</b></summary>
 Oct 10 12:45:00 server01 kernel: ERROR: Out of memory
- ```
 </details>
