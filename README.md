@@ -85,3 +85,32 @@ log-analyzer/
 4. Поиск по ключевому слову - быстрый поиск
 
 Выход - завершение работы
+
+## Примеры команд
+```bash
+# Использование в скриптах
+from log_parser import parse_log_file
+from log_stats import generate_report
+
+# Парсинг файла
+logs = parse_log_file('/var/log/apache2/access.log', log_type='apache')
+
+# Генерация отчета
+report = generate_report(logs)
+print(f"Найдено ошибок: {report['errors']}")
+```
+## Поддерживаемые форматы
+
+<details> <summary><b>📋 Apache Access Log</b></summary>
+```bash
+192.168.1.1 - - [10/Oct/2023:12:34:56 +0300] "GET /index.html HTTP/1.1" 200 1234
+```
+</details><details> <summary><b>📋 Nginx Access Log</b></summary>
+```bash
+192.168.1.100 - - [10/Oct/2023:12:40:00 +0300] "GET /style.css HTTP/1.1" 200 1234
+```
+</details><details> <summary><b>📋 Syslog</b></summary>
+```bash
+Oct 10 12:45:00 server01 kernel: ERROR: Out of memory
+ ```
+</details>
